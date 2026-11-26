@@ -47,6 +47,25 @@ flowchart TD
 5. Create ODS tables and reporting views.
 6. Transfer Gold data to Azure SQL Database using ADF.
 
+### 1. Data Ingestion
+The TPCH dataset is used as the source data for the project.
+
+### 2. Bronze Layer
+Raw data is ingested and stored in the Bronze layer.
+
+### 3. Silver Layer
+Data cleaning and transformation activities are performed using PySpark.
+
+### 4. Gold Layer
+Business-level transformations are performed to prepare data for reporting.
+
+### 5. Azure SQL Database
+Gold data is transferred to Azure SQL Database using Azure Data Factory Copy Data activity.
+
+### 6. SQL Reporting
+ODS tables and RPT views are created for structured data storage and reporting.
+
+
 ## Data Model
 - ODS tables: 6
 - Reporting views: 2
