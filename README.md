@@ -28,8 +28,6 @@ The project follows the Medallion Architecture:
 Gold data is transferred to Azure SQL Database using
 Azure Data Factory.
 
-## Project Architecture
-
 ```mermaid
 flowchart TD
     A[TPCH Dataset] --> B[Azure Data Lake Storage]
@@ -61,8 +59,6 @@ ODS tables and RPT views are created for structured data storage and reporting.
 
 
 ## Data Model
-- ODS tables: 6
-- Reporting views: 2
 
 ### ODS (Operational Data Store)
 The project contains 6 ODS tables to store structured data
