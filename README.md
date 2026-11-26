@@ -40,12 +40,6 @@ flowchart TD
     F --> G[Azure SQL Database]
 ```
 ## Project Workflow
-1. Ingest TPCH source data.
-2. Store raw data in the Bronze layer.
-3. Clean and transform data in the Silver layer.
-4. Perform business transformations in the Gold layer.
-5. Create ODS tables and reporting views.
-6. Transfer Gold data to Azure SQL Database using ADF.
 
 ### 1. Data Ingestion
 The TPCH dataset is used as the source data for the project.
@@ -69,6 +63,15 @@ ODS tables and RPT views are created for structured data storage and reporting.
 ## Data Model
 - ODS tables: 6
 - Reporting views: 2
+
+### ODS (Operational Data Store)
+The project contains 6 ODS tables to store structured data
+for further processing and analysis.
+
+### RPT (Reporting)
+The project contains 2 RPT views created using SQL to support
+reporting and analytical requirements.
+
 
 ## Key Learnings
 - Data ingestion and ETL processes
