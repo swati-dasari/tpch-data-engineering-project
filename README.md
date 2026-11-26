@@ -39,10 +39,6 @@ flowchart TD
     E --> F[Azure Data Factory - Copy Data Activity]
     F --> G[Azure SQL Database]
 ```
-
-## Project Workflow
-
-
 ## Project Workflow
 1. Ingest TPCH source data.
 2. Store raw data in the Bronze layer.
