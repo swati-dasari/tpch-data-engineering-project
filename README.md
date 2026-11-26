@@ -28,6 +28,17 @@ The project follows the Medallion Architecture:
 Gold data is transferred to Azure SQL Database using
 Azure Data Factory.
 
+## Project Architecture
+
+```mermaid
+flowchart TD
+    A[TPCH Dataset] --> B[Azure Data Lake Storage]
+    B --> C[Bronze Layer]
+    C --> D[Silver Layer]
+    D --> E[Gold Layer]
+    E --> F[Azure Data Factory]
+    F --> G[Azure SQL Database]
+
 ## Project Workflow
 1. Ingest TPCH source data.
 2. Store raw data in the Bronze layer.
