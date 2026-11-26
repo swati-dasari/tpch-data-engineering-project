@@ -36,8 +36,12 @@ flowchart TD
     B --> C[Bronze Layer]
     C --> D[Silver Layer]
     D --> E[Gold Layer]
-    E --> F[Azure Data Factory]
+    E --> F[Azure Data Factory - Copy Data Activity]
     F --> G[Azure SQL Database]
+```
+
+## Project Workflow
+
 
 ## Project Workflow
 1. Ingest TPCH source data.
